@@ -77,13 +77,16 @@ startGame.addEventListener("click", () => {
 // getBoundingClientRect()
 
 function randomPosition(elem) {
-  const y = blankBoxImg.clientHeight + 20;
-  const x = blankBoxImg.clientWidth + 40;
+  const y = blankBoxImg.clientHeight + 40;
+  const x = blankBoxImg.clientWidth + 20;
   console.log("position", y, x);
   //Math.random() * (max - min) + min;
-  const randomY = Math.random() * y;
-  const randomX = Math.random() * x;
-  //   console.log("random position", randomY, randomX);
+  const randomY = Math.random() * (y - 40) + 40;
+  const randomX = Math.random() * (x - 20) + 20;
+  console.log("random position", randomY, randomX);
+
+  // const randomY=Math.random()*(max - min) + min;
+  // const randomX=Math.random()*(max - min) + min;
   elem.style.top = randomY + "px";
   elem.style.left = randomX + "px";
 }
