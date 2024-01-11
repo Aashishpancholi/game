@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+
+/* .............................  */
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#top h1 {
+  padding: 1.5rem 2rem 1.5rem 1rem;
+  margin: 2rem 0;
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  box-shadow: 3px 3px 9px black;
+  border-radius: 5px;
+  background-color: #ffffffd4;
+
+  font-weight: bold;
+}
+
+#start {
+  text-align: center;
+}
+.main-box {
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid burlywood;
+  box-shadow: 2px 2px 8px brown;
+  z-index: 1;
+  background: linear-gradient(#ffffffb8, #ffffffb8);
+}
+
+#game-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* height: 400px; */
+}
+
+.imgbox {
+  height: 200px;
+  width: 200px;
+}
+
+.imgbox img {
+  height: 100%;
+  width: 100%;
+}
+
+.head a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.head {
+  margin: 0 2rem;
+}
+
+#btn {
+  padding: 8px 25px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 8px black;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 2rem;
+  color: black;
+  border: 1px solid gray;
+}
+
+.imgbox a img:active {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(45 39 29);
+  text-shadow: 1px 1px 3px gray;
+  margin-top: 1rem;
+  visibility: visible;
+}
+p {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.selectCharacterImg {
+  background-color: #000000ab;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 2px black;
+}
+.blank-box-img {
+  position: relative;
+}
+.smallImg {
+  width: 40px;
+  position: absolute;
+  /* background-color: #906d6d; */
+}
+
+/* ..........................  */
+
+#second-page {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  height: 100vh;
+}
+#left {
+  font-size: 20px;
+  font-weight: 600;
+}
+#right {
+  font-size: 20px;
+  font-weight: 600;
+}
+#blank-box-img {
+  height: 84vh;
+  width: 90%;
+  border: 1px solid burlywood;
+  box-shadow: 2px 2px 8px brown;
+  z-index: 1;
+  background: linear-gradient(#ffffffb8, #ffffffb8);
+}
+body {
+  background-image: url("./images/xmen\ background.webp");
+  height: 100vh;
+  width: 100%;
+}
+
+/* ..........................  */
+
+#third-page {
+  display: none;
+}
