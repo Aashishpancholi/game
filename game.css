@@ -83,6 +83,12 @@
   border: 1px solid gray;
 }
 
+#btn:hover {
+  background-color: rgb(3, 3, 41);
+  color: white;
+  transition: all 0.3s ease;
+}
+
 .imgbox a img:active {
   background-color: orange;
   border-radius: 10px;
@@ -127,10 +133,12 @@ p {
 #left {
   font-size: 20px;
   font-weight: 600;
+  color: white;
 }
 #right {
   font-size: 20px;
   font-weight: 600;
+  color: white;
 }
 #blank-box-img {
   height: 84vh;
@@ -150,4 +158,5 @@ body {
 
 #third-page {
   display: none;
+  color: white;
 }
