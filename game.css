@@ -94,14 +94,24 @@
   border-radius: 10px;
 }
 
-h3 {
+h2 {
   font-weight: bold;
   font-size: 35px;
-  color: white;
+  /* color: white; */
   text-shadow: 1px 1px 3px gray;
   margin-top: 1rem;
   visibility: visible;
 }
+
+h3 {
+  font-weight: bold;
+  font-size: 35px;
+  /* color: white; */
+  text-shadow: 1px 1px 3px gray;
+  margin-top: 1rem;
+  visibility: visible;
+}
+
 p {
   font-size: 25px;
   font-weight: bold;
@@ -161,4 +171,8 @@ body {
 
 #third-page {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  height: 100vh;
 }

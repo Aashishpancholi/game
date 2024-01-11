@@ -18,7 +18,7 @@ const blankBoxImg = document.querySelector("#blank-box-img");
 const finalScoreDiv = document.querySelector("#third-page h3 span");
 
 let selectedAnime = "";
-let timer = 100;
+let timer = 20;
 let score = 0;
 
 selectCharacter.forEach((char) => {
@@ -45,9 +45,9 @@ startGame.addEventListener("click", () => {
 
   //console.log(selectedAnime)
 
-  const interval = setInterval(() => {
+  const timeInterval = setInterval(() => {
     if (timer === 1) {
-      clearInterval(interval);
+      clearInterval(timeInterval);
       playingScreen.style.display = "none";
       scoreScreen.style.display = "flex";
       calculateScore();
@@ -55,7 +55,10 @@ startGame.addEventListener("click", () => {
     timeDiv.innerHTML = --timer;
   }, 1000);
 
-  setInterval(() => {
+  const scoreInterval = setInterval(() => {
+    if (timer === 1) {
+      clearInterval(scoreInterval);
+    }
     const img = document.createElement("img");
     img.src = selectedAnime;
     img.classList.add("smallImg");
@@ -74,12 +77,14 @@ startGame.addEventListener("click", () => {
 // getBoundingClientRect()
 
 function randomPosition(elem) {
-  const y = blankBoxImg.clientHeight;
-  const x = blankBoxImg.clientWidth;
+  const y = blankBoxImg.clientHeight + 20;
+  const x = blankBoxImg.clientWidth + 40;
   console.log("position", y, x);
   //Math.random() * (max - min) + min;
-  const randomY = Math.random() * y;
-  const randomX = Math.random() * x;
+  const randomY = Math.random() * ("40px" - y) + 40;
+  const randomX = Math.random() * ("20px" - x) + 20;
+  console.log("random position", randomY, randomX);
+
   // const randomY=Math.random()*(max - min) + min;
   // const randomX=Math.random()*(max - min) + min;
   elem.style.top = randomY + "px";
