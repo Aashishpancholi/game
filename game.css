@@ -97,7 +97,7 @@
 h3 {
   font-weight: bold;
   font-size: 35px;
-  color: rgb(45 39 29);
+  color: white;
   text-shadow: 1px 1px 3px gray;
   margin-top: 1rem;
   visibility: visible;
@@ -150,6 +150,9 @@ p {
 }
 body {
   background-image: url("./images/xmen\ background.webp");
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%;
 }
@@ -158,5 +161,4 @@ body {
 
 #third-page {
   display: none;
-  color: white;
 }
