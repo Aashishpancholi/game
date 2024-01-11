@@ -20,6 +20,7 @@ const finalScoreDiv = document.querySelector("#third-page h3 span");
 let selectedAnime = "";
 let timer = 20;
 let score = 0;
+startGame.disabled = true;
 
 selectCharacter.forEach((char) => {
   char.addEventListener("click", (e) => {
@@ -34,6 +35,7 @@ selectCharacter.forEach((char) => {
     const charName = e.target.parentElement.nextElementSibling.innerHTML;
     document.querySelector("#selectedSuperhero span").innerHTML = charName;
     selectedAnime = e.target.src;
+    startGame.disabled = false;
   });
 });
 
