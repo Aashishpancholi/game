@@ -81,12 +81,9 @@ function randomPosition(elem) {
   const x = blankBoxImg.clientWidth + 40;
   console.log("position", y, x);
   //Math.random() * (max - min) + min;
-  const randomY = Math.random() * ("40px" - y) + 40;
-  const randomX = Math.random() * ("20px" - x) + 20;
-  console.log("random position", randomY, randomX);
-
-  // const randomY=Math.random()*(max - min) + min;
-  // const randomX=Math.random()*(max - min) + min;
+  const randomY = Math.random() * y;
+  const randomX = Math.random() * x;
+  //   console.log("random position", randomY, randomX);
   elem.style.top = randomY + "px";
   elem.style.left = randomX + "px";
 }
