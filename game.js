@@ -65,26 +65,25 @@ startGame.addEventListener("click", () => {
     img.src = selectedAnime;
     img.classList.add("smallImg");
 
-    // attach clicking mechanism
-
-    img.addEventListener("click", removeImage);
-
     // give the image a random position
 
     randomPosition(img);
     blankBoxImg.append(img);
+    // attach clicking mechanism
+
+    img.addEventListener("click", removeImage);
   }, 450);
 });
 
 // getBoundingClientRect()
 
 function randomPosition(elem) {
-  const y = blankBoxImg.clientHeight + 40;
-  const x = blankBoxImg.clientWidth + 20;
+  const y = blankBoxImg.clientHeight + 50;
+  const x = blankBoxImg.clientWidth + 50;
   console.log("position", y, x);
   //Math.random() * (max - min) + min;
-  const randomY = Math.random() * (y - 40) + 40;
-  const randomX = Math.random() * (x - 20) + 20;
+  const randomY = Math.random() * (y - 50) + 50;
+  const randomX = Math.random() * (x - 50) + 50;
   console.log("random position", randomY, randomX);
 
   // const randomY=Math.random()*(max - min) + min;
